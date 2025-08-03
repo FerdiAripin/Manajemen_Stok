@@ -34,7 +34,7 @@ class ProdukLamaResource extends Resource
             Forms\Components\TextInput::make('stok_awal')
                 ->numeric()
                 ->required()
-                ->label('Stok Awal'),
+                ->label('Stok'),
         ]);
     }
 
@@ -44,7 +44,7 @@ class ProdukLamaResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('nama_produk')->label('Nama Produk')->searchable(),
                 Tables\Columns\TextColumn::make('kategori.nama_kategori')->label('Kategori'),
-                Tables\Columns\TextColumn::make('stok_awal')->label('Stok Awal'),
+                Tables\Columns\TextColumn::make('stok_awal')->label('Stok'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->label('Ditambahkan')
                     ->date('d M Y')
